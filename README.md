@@ -8,6 +8,7 @@ Based on https://www.programiz.com/
 ### Contiguous (arrays) and Linked Data Structures 
 
 Arrays: Constant-time access given the index, Space efficiency and Memory locality.
+
 Linked Lists: Overflow on linked structures can never occur, Insertions and deletions are simpler and With large records, moving pointers is easier and faster than moving the items themselves.
 
 ### Stacks and Queues 
@@ -18,7 +19,7 @@ LIFO vs FIFO. Stacks and queues can be effectively implemented using either arra
 
 Comparing implementations: n - the number of elements currently in the array
 
-| |Array Unsorted|Array Sorted|Singly unsorted|Linked List Double unsorted|Linked List Singly sorted|Linked List Double sorted|
+| |Array Unsorted|Array Sorted|Linked List Singly unsorted|Linked List Double unsorted|Linked List Singly sorted|Linked List Double sorted|
 |----|----|----|----|----|----|----|
 |Search(L, k)|O(n)|O(log n)|O(n)|O(n)|O(n)|O(n)|
 |Insert(L, x)|O(1)|O(n)|O(1)|O(1)|O(n)|O(n)|
@@ -37,7 +38,9 @@ Comparing implementations: n - the number of elements currently in the array
 
 ### Priority Queues
 
-### Hashing: Use the value of our hash function (maps keys to integers) as an index into an array, and store our item at that position.
+### Hashing
+
+Use the value of our hash function (maps keys to integers) as an index into an array, and store our item at that position.
 	
 Collision resolution: Chaining vs open addressing.
 
@@ -59,13 +62,13 @@ Hash table with chaining (m buckets and n elements):
 
 Places an unsorted element at its suitable place in each iteration.
 
-Complexity: O(n2)
+**Complexity: O(n2)**
 
 ### SelectionSort
 
 Selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
 
-Complexity: O(n2)
+**Complexity: O(n2)**
 
 ### BubbleSort
 
@@ -73,7 +76,7 @@ Complexity: O(n2)
 2. After each iteration, the largest element among the unsorted elements is placed at the end.
 3. In each iteration, the comparison takes place up to the last unsorted element.
 
-Complexity: O(n2)
+**Complexity: O(n2)**
 
 ### HeapSort
 
@@ -89,7 +92,7 @@ Complexity: O(n2)
 	4. Reduce the size of the heap by 1 and heapify the root element again so that we have highest element at root.
 	5. The process is repeated until all the items of the list is sorted.
 
-Complexity: O(n log n)	
+**Complexity: O(n log n)**	
 
 ### MergeSort 
 	
@@ -100,7 +103,7 @@ Complexity: O(n log n)
 	3. Conquer: In the conquer step, we try to sort both the subarrays A[p..q] and A[q+1, r]. If we haven't yet reached the base case, we again divide both these subarrays and try to sort them.
 	4. Combine: When the conquer step reaches the base step and we get two sorted subarrays A[p..q] and A[q+1, r] for array A[p..r], we combine the results by creating a sorted array A[p..r] from two sorted subarrays A[p..q] and A[q+1, r]
 
-Complexity: O(n log n)
+**Complexity: O(n log n)**
 
 ### QuickSort
 
@@ -110,7 +113,7 @@ Complexity: O(n log n)
 	2. Conquer: The left and the right subparts are again partitioned using the by selecting pivot elements for them. This can be achieved by recursively passing the subparts into the algorithm.
 	3. Combine: This step does not play a significant role in quicksort. The array is already sorted at the end of the conquer step.
 
-Complexity: O(n log n) - Worst O(n2)
+**Complexity: O(n log n) - Worst O(n2)**
 
 ### BucketSort
 
@@ -119,7 +122,7 @@ Complexity: O(n log n) - Worst O(n2)
 2. The process of bucket sort can be understood as scatter-gather approach.
     - The elements are first scattered into buckets then the elements of buckets are sorted. Finally, the elements are gathered in order.
 
-Complexity: Average O(n) - Worst O(n2)
+**Complexity: Average O(n) - Worst O(n2)**
 
 ### ShellSort
 
@@ -147,7 +150,7 @@ Every column is ordered and we get:
 
 Then the gap is reduced and we do the same until the gap is 1 (simple InsertionSort but with plenty of items in its final position).
 
-Complexity: Average O(n log n) - Worst O(n2)
+**Complexity: Average O(n log n) - Worst O(n2)**
 
 ### CountingSort
 
